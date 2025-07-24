@@ -10,17 +10,16 @@ RESET='\033[0m'
 echo -e "[*]Ich goan effe de installasje checke... Ein moment"
 # Go installere 
 if ! command -v go &> /dev/null || ! go version &> /dev/null; then
-    echo -e "${Roud}[-] GO is neet good geïnstalleerd.${RESET}"
+    echo -e "${Roud}[-]${RESET} GO is neet good geïnstalleerd"
 else
-    echo "${groean}[+] GO is good geïnstalleerd!"
+    echo -e "${groean}[+]${RESET}  GO is good geïnstalleerd!"
 fi
 #assetfinder installere
 if command -v assetfinder >/dev/null 2>&1; then
-    echo "${groean}[+]Assetfinder is al geïnstalleerd, jong."
+    echo -e"${groean}[+]${RESET} Assetfinder is al geïnstalleerd, jong."
 else
-    echo "${Roud}[-]Assetfinder is neet gevónje. Ich gaon 'm nou installeere..."
+    echo -e "${Roud}[-]${RESET} Assetfinder is neet gevónje. Ich gaon 'm nou installeere..."
     go install github.com/tomnomnom/assetfinder@latest
-    echo "Assetfinder is klaor. Vergeet neet om \$HOME/go/bin in dien PATH te zette, hè."
+    echo "{groean}[+]${RESET}Assetfinder is klaor. Vergeet neet om \$HOME/go/bin in dien PATH te zette, hè."
 fi
-
-
+echo -e "${geel}[*]${RESET} "De installaasje is klaor, we gaon nao de dokumenteströktoer kieke"
