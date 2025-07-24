@@ -5,6 +5,18 @@ Roud='\033[0;31m'
 Geel='\033[0m'
 groean='\033[0;32m'
 RESET='\033[0m'
+Blauw='\e[34m'
+clear 
+
+# ANSI rood
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+# Print rode figlet tekst
+echo -e "${RED}"
+figlet "Boursin, van de"
+figlet "mestreechtener ★"
+echo -e "${NC
 
 #Ich gaon effe de installaasje checke.
 echo -e "[*]Ich goan effe de installasje checke... Ein moment"
